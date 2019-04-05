@@ -43,7 +43,9 @@ public class Good extends Actor
     public void jump(){
         velocity = -15;
     }
+    public void endGame(){
+        
     
-    
+    }
 
 }
