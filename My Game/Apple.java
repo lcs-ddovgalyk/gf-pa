@@ -1,23 +1,22 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class Evil here.
+ * Write a description of class Apple here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Evil extends Actor
+public class Apple extends Actor
 {
     private final int gravity = -1;
     private int velocity;
+    
+    
     public void act() 
     {
-        
         fall();
-        if(isTouching(Good.class)){
-            Greenfoot.stop();
-            
-        }
+        
+
     }
     public void fall(){
         setLocation(getX()+ velocity,getY() );
@@ -26,3 +25,4 @@ public class Evil extends Actor
         
     }
 }
+

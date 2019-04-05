@@ -10,10 +10,13 @@ public class EvilDown extends Actor
 {
     private final int gravity = 1;
     private int velocity;
+    
     public void act() 
     {
+        /*
         setRotation(-90);
         fall();
+        
         if(isTouching(Good.class)){
             Greenfoot.stop();
             
@@ -26,7 +29,7 @@ public class EvilDown extends Actor
         
         
         
-        
+       */ 
     }
     
 }
