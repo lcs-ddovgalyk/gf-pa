@@ -27,6 +27,7 @@ public class Good extends Actor
         {
             setLocation(getX()-4, getY());
         }
+        
     }
     
 }
