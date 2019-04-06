@@ -39,6 +39,9 @@ public class MyWorld extends World
         showText("Score: " + score, 50, 50);
         if(score < 0){
             Greenfoot.stop();
+            showText("Game Over", 325, 225);
+            showText("Final Score" + score, 325,200);
+            
             
         }
         
