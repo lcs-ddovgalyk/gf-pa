@@ -20,7 +20,7 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1);
-        addObject(new Good(), 50, 225);
+        addObject(new StickMan(), 50, 248);
 
     }
     public void act()
@@ -29,7 +29,7 @@ public class MyWorld extends World
         
         if(getRandomNumber(1,100) == 1){
             
-            addObject(new EvilDown(),getYY, 50);
+            addObject(new EvilDown(),500, 240);
 
         }
         if(getRandomNumber(1,100) == 2){

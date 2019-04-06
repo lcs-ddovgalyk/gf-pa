@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Good extends Actor
+public class StickMan extends Actor
 {
     private final int gravity = 1;
     private int velocity;
@@ -17,7 +17,7 @@ public class Good extends Actor
         fall();
         
     }    
-    public Good(){
+    public StickMan(){
         velocity = 0;
     }
     private void checkKeyPress()

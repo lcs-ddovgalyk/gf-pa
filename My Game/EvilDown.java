@@ -8,28 +8,28 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class EvilDown extends Actor
 {
-    private final int gravity = 1;
+    private final int gravity = -1;
     private int velocity;
     
     public void act() 
     {
-        /*
-        setRotation(-90);
+        
+        
         fall();
         
-        if(isTouching(Good.class)){
+        if(isTouching(StickMan.class)){
             Greenfoot.stop();
             
         }
     }    
     public void fall(){
-        setLocation(getX(),getY() + velocity);
-        if(getY() > getWorld().getHeight() - 0) velocity = 0;
-        else velocity += gravity; 
+        setLocation(getX()+ velocity,getY() );
+        if(getX() > getWorld().getWidth() + 0) velocity = 0;
+        else velocity = gravity; 
         
         
         
-       */ 
+       
     }
     
 }
