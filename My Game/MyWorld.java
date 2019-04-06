@@ -45,16 +45,17 @@ public class MyWorld extends World
             Greenfoot.stop();
             showText("Game Over", 325, 225);
             showText("Final Score" + score, 325,200);
-            
+            Greenfoot.playSound("gameover.mp3");
+
             
         }
         showText("Time Left:" + time, 545, 50);
         time = time - 1;
         if(time <= 0){
             Greenfoot.stop();
-            
-        }
+            Greenfoot.playSound("gameover.mp3");
 
+        }
 
     }
     public int getRandomNumber(int start,int end)
