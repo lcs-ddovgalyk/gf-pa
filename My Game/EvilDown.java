@@ -17,10 +17,7 @@ public class EvilDown extends Actor
         
         fall();
         
-        if(isTouching(StickMan.class)){
-            Greenfoot.stop();
-            
-        }
+        
     }    
     public void fall(){
         setLocation(getX()+ velocity,getY() );

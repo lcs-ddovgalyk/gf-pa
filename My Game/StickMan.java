@@ -37,10 +37,14 @@ public class StickMan extends Actor
         if(isTouching(Apple.class)){
             MyWorld world = (MyWorld)getWorld();
             world.score = world.score + 1;
-            
-            
             removeTouching(Apple.class);
             
+            
+        }
+        if(isTouching(EvilDown.class)){
+            MyWorld world = (MyWorld)getWorld();
+            world.score = world.score - 10;
+            removeTouching(EvilDown.class);
             
         }
 
