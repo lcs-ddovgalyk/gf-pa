@@ -31,7 +31,7 @@ public class StickMan extends Actor
         {
             setLocation(getX()-4, getY());
         }
-        if (Greenfoot.isKeyDown("space") && getY() > getWorld().getHeight() - 180){
+        if (Greenfoot.isKeyDown("space") && getY() > getWorld().getHeight() - 160){
             jump();
         }
         if(isTouching(Apple.class)){
@@ -44,14 +44,13 @@ public class StickMan extends Actor
         if(isTouching(EvilDown.class)){
             MyWorld world = (MyWorld)getWorld();
             world.score = world.score - 10;
-            removeTouching(EvilDown.class);
             
         }
 
     }
     public void fall(){
         setLocation(getX(),getY() + velocity);
-        if(getY() > getWorld().getHeight() - 180) velocity = 0;
+        if(getY() > getWorld().getHeight() - 160) velocity = 0;
         else velocity += gravity; 
         
     }

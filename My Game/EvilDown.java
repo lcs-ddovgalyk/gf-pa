@@ -17,7 +17,10 @@ public class EvilDown extends Actor
         
         fall();
         
-        
+        if(isAtEdge()){
+           setLocation(700,700);
+           
+        }
     }    
     public void fall(){
         setLocation(getX()+ velocity,getY() );
@@ -28,5 +31,6 @@ public class EvilDown extends Actor
         
        
     }
+    
     
 }

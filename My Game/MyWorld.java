@@ -29,13 +29,15 @@ public class MyWorld extends World
     { 
         getYY= getRandomNumber(1,500);
         
-        if(getRandomNumber(1,100) == 1){
-            
-            addObject(new EvilDown(),500, 240);
-
+        if ((time % 60) == 0)
+        {
+            if(getRandomNumber(1,3) == 2){
+                
+            addObject(new EvilDown(), 500, 250);
+        }
         }
         if(getRandomNumber(1,100) == 2){
-            addObject(new Apple(),500 , 240);
+            addObject(new Apple(),500 , 250);
 
         }
         showText("Score: " + score, 50, 50);
