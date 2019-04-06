@@ -10,6 +10,8 @@ public class MyWorld extends World
 {
     private int getYY;
     public int score;
+    private int time = 6000;
+    
     
 
     /**
@@ -44,7 +46,12 @@ public class MyWorld extends World
             
             
         }
-        
+        showText("Time Left:" + time, 545, 50);
+        time = time - 1;
+        if(time <= 0){
+            Greenfoot.stop();
+            
+        }
 
 
     }
