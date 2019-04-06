@@ -37,6 +37,11 @@ public class MyWorld extends World
 
         }
         showText("Score: " + score, 50, 50);
+        if(score < 0){
+            Greenfoot.stop();
+            
+        }
+        
 
 
     }
