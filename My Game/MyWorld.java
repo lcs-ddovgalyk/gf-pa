@@ -68,6 +68,7 @@ public class MyWorld extends World
         }
         //This shows how much time you have left on the screen
         showText("Time Left:" + timeleft, 500, 50);
+        //every frame the time you have left get less by a frame
         time = time - 1;
         //if your time is less than 0 the game will stop
         if(time <= 0){
