@@ -8,9 +8,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class EvilDown extends Actor
 {
-    private final int gravity = -1;
-    private int velocity;
     
+    private final int gravity = -1;
+    //the speed the character moves at
+    private int velocity;
+    //this will act all the time
+   
     public void act() 
     {
         

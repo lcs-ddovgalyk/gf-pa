@@ -15,6 +15,7 @@ public class Apple extends Actor
     public void act() 
     {
         fall();
+        //if the apple is at edge it will move 
         if(isAtEdge()){
             setLocation(700,700);
         }
