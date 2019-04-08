@@ -31,7 +31,7 @@ public class MyWorld extends World
         getYY= getRandomNumber(1,500);
         timeleft = time/100;
         
-        if ((time % 120) == 0)
+        if ((time % 140) == 0)
         {
             if(getRandomNumber(1,3) == 2){
             

@@ -17,7 +17,6 @@ public class Apple extends Actor
         fall();
         if(isAtEdge()){
             setLocation(700,700);
-            
         }
 
     }
