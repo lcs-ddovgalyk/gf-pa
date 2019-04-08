@@ -11,6 +11,7 @@ public class MyWorld extends World
     private int getYY;
     public int score;
     private int time = 6000;
+    private int timeleft;
     
     
 
@@ -28,16 +29,19 @@ public class MyWorld extends World
     public void act()
     { 
         getYY= getRandomNumber(1,500);
+        timeleft = time/100;
         
-        if ((time % 60) == 0)
+        if ((time % 120) == 0)
         {
             if(getRandomNumber(1,3) == 2){
-                
-            addObject(new EvilDown(), 500, 250);
+            
+            
+            addObject(new EvilDown(), 590, 250);
+                       
         }
         }
         if(getRandomNumber(1,100) == 2){
-            addObject(new Apple(),500 , 250);
+            addObject(new Apple(),600 , 250);
 
         }
         showText("Score: " + score, 50, 50);
@@ -49,7 +53,7 @@ public class MyWorld extends World
 
             
         }
-        showText("Time Left:" + time, 545, 50);
+        showText("Time Left:" + timeleft, 500, 50);
         time = time - 1;
         if(time <= 0){
             Greenfoot.stop();
