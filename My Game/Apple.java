@@ -15,7 +15,10 @@ public class Apple extends Actor
     public void act() 
     {
         fall();
-        
+        if(isAtEdge()){
+            setLocation(700,700);
+            
+        }
 
     }
     public void fall(){
